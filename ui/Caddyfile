@@ -1,0 +1,6 @@
+:8000
+
+reverse_proxy /products 127.0.0.1:5000
+reverse_proxy /products/* 127.0.0.1:5000
+reverse_proxy 127.0.0.1:3000
+reverse_proxy /ws 127.0.0.1:5000
